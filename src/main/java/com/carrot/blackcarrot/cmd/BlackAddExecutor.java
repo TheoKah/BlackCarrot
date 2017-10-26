@@ -64,6 +64,8 @@ public class BlackAddExecutor implements CommandExecutor{
 		BlackData.addItem(banItem);
 
 		src.sendMessage(Text.of(TextColors.DARK_GREEN, BlackLang.SUCCESS_ADD));
+		
+		banItem.printInfo(src);
 
 		return CommandResult.success();
 	}
