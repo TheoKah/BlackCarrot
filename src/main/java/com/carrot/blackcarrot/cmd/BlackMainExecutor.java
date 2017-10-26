@@ -22,10 +22,11 @@ public class BlackMainExecutor implements CommandExecutor{
 
 		contents.add(Text.of(TextColors.GOLD, "/bl help", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_HELP));
 		contents.add(Text.of(TextColors.GOLD, "/bl list", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_LIST));
-		contents.add(Text.of(TextColors.GOLD, "/bl edit <alias> [action [param]]", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_EDIT));
 		contents.add(Text.of(TextColors.GOLD, "/bl info <alias>", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_INFO));
-		contents.add(Text.of(TextColors.GOLD, "/bl add <alias>", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_ADD));
-		contents.add(Text.of(TextColors.GOLD, "/bl rename <alias>", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_RENAME));
+		contents.add(Text.of(TextColors.GOLD, "/bl add [alias]", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_ADD));
+		contents.add(Text.of(TextColors.GOLD, "/bl delete <alias>", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_DEL));
+		contents.add(Text.of(TextColors.GOLD, "/bl rename <alias> <newname>", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_RENAME));
+		contents.add(Text.of(TextColors.GOLD, "/bl edit <alias> [action [param]]", TextColors.GRAY, " - ", TextColors.YELLOW, BlackLang.HELP_EDIT));
 
 		PaginationList.builder()
 		.title(Text.of(TextColors.GOLD, "{ ", TextColors.YELLOW, "BlackCarrot Help", TextColors.GOLD, " }"))
