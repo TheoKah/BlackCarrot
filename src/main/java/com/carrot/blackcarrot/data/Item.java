@@ -56,7 +56,7 @@ public class Item {
 	}
 
 	public Item(ItemStack item) {
-		id = item.getItem().getId();
+		id = item.getType().getId();
 		name = item.getTranslation().get();
 		alias = id;
 
@@ -70,7 +70,7 @@ public class Item {
 	}
 
 	public boolean same(ItemStack candidate) {
-		if (!id.equals(candidate.getItem().getId()))
+		if (!id.equals(candidate.getType().getId()))
 			return false;
 		
 		int matched = 0;
