@@ -41,7 +41,8 @@ public class BlackData {
 					"UnsafeData.ench",
 					"UnsafeData.StoredEnchantments",
 					"UnsafeData.Potion",
-					"UnsafeData.EntityTag");
+					"UnsafeData.EntityTag",
+					"UnsafeData.spell");
 
 	public static void init(File rootDir) throws IOException
 	{
