@@ -47,7 +47,7 @@ public class BlackAddExecutor implements CommandExecutor{
 				return CommandResult.success();
 			}
 		} else {
-			if (BlackData.getItem(item.get().getType().getId()).isPresent()) {
+			if (BlackData.getItem(item.get().getItem().getId()).isPresent()) {
 				src.sendMessage(Text.of(TextColors.RED, BlackLang.ERROR_ALIASEXISTS));
 				return CommandResult.success();
 			}

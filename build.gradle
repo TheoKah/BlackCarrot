@@ -3,10 +3,9 @@ plugins {
 }
 
 group = 'com.carrot'
-version = '0.1-S7.0-MC1.12.1'
+version = '0.1-S5.1-MC1.10.2'
 description = 'A simple yet powerful BlackList plugin for Sponge'
 
 dependencies {
-    compile 'org.spongepowered:spongeapi:7.0.0-20171018.222656-46'
-    compile 'com.google.code.gson:gson:2.8.1'
+    compile 'org.spongepowered:spongeapi:5.1.0'
 }
