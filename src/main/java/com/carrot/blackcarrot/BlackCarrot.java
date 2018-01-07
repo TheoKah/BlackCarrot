@@ -17,6 +17,7 @@ import org.spongepowered.api.text.Text;
 
 import com.carrot.blackcarrot.cmd.BlackActionExecutor;
 import com.carrot.blackcarrot.cmd.BlackAddExecutor;
+import com.carrot.blackcarrot.cmd.BlackDebugExecutor;
 import com.carrot.blackcarrot.cmd.BlackDeleteExecutor;
 import com.carrot.blackcarrot.cmd.BlackEditExecutor;
 import com.carrot.blackcarrot.cmd.BlackHelpExecutor;
@@ -76,6 +77,12 @@ public class BlackCarrot {
 				.description(Text.of(BlackLang.HELP_LIST))
 				.permission("blackcarrot.command.list")
 				.executor(new BlackListExecutor())
+				.build();
+		
+		CommandSpec cmdDebug = CommandSpec.builder()
+				.description(Text.of(BlackLang.HELP_DEBUG))
+				.permission("blackcarrot.command.admin")
+				.executor(new BlackDebugExecutor())
 				.build();
 
 		CommandSpec cmdInfo = CommandSpec.builder()
@@ -155,6 +162,7 @@ public class BlackCarrot {
 				.executor(new BlackMainExecutor())
 				.child(cmdHelp, "help", "?", "wiki", "how", "howto", "h")
 				.child(cmdList, "list", "l", "show", "view", "see", "display")
+				.child(cmdDebug, "debug")
 				.child(cmdInfo, "info", "i", "why", "more", "ffs", "y", "yudodis", "sad", "sadness", "reason", "explain")
 				.child(cmdEdit, "edit", "e", "config", "setup")
 				.child(cmdAdd, "add", "a", "append", "disallow", "block", "ban", "b", "forbid", "no", "nope", "nuh", "nah", "meh", "goaway", "bad", "baddog", "banhammer", "non", "nup")

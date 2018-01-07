@@ -16,6 +16,7 @@ public class BlackLang
 	public static String HELP_HELP = "Print a link to the wiki";
 	public static String HELP_EDIT = "Edit an item";
 	public static String HELP_LIST = "Print the list of banned items";
+	public static String HELP_DEBUG = "Print the list of keys/values of the item in hand";
 	public static String HELP_INFO = "Print more info about a banned item";
 	public static String HELP_ADD = "Add an item to the list";
 	public static String HELP_DEL = "Remove an item from the list";
